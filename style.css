@@ -1,0 +1,321 @@
+*{
+
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+
+}
+
+body{
+
+  background:#050505;
+  color:white;
+  overflow-x:hidden;
+
+}
+
+header{
+
+  width:100%;
+  padding:25px 50px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  position:fixed;
+  top:0;
+
+  background:rgba(0,0,0,0.7);
+
+  backdrop-filter:blur(10px);
+
+  border-bottom:1px solid #300;
+
+  z-index:999;
+
+}
+
+.logo{
+
+  font-size:32px;
+  font-weight:bold;
+
+  color:red;
+
+  letter-spacing:5px;
+
+}
+
+nav{
+
+  display:flex;
+  gap:20px;
+
+}
+
+nav a{
+
+  color:white;
+  text-decoration:none;
+
+  transition:0.3s;
+
+}
+
+nav a:hover{
+
+  color:red;
+
+}
+
+.hero{
+
+  height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+
+  background:radial-gradient(circle,#220000,#000);
+
+  position:relative;
+
+}
+
+.overlay{
+
+  position:absolute;
+
+  width:600px;
+  height:600px;
+
+  background:red;
+
+  filter:blur(250px);
+
+  opacity:0.2;
+
+}
+
+.hero-content{
+
+  position:relative;
+  z-index:2;
+
+}
+
+.hero h1{
+
+  font-size:110px;
+
+  color:red;
+
+  letter-spacing:10px;
+
+}
+
+.hero p{
+
+  color:#999;
+
+  margin-top:15px;
+
+  font-size:20px;
+
+}
+
+.buttons{
+
+  margin-top:40px;
+
+  display:flex;
+  justify-content:center;
+
+  gap:20px;
+
+}
+
+button{
+
+  padding:16px 35px;
+
+  border:none;
+
+  border-radius:14px;
+
+  background:red;
+
+  color:white;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+
+}
+
+button:hover{
+
+  transform:translateY(-5px);
+
+  box-shadow:0 0 25px red;
+
+}
+
+.outline{
+
+  background:transparent;
+
+  border:2px solid red;
+
+}
+
+.cards{
+
+  width:90%;
+
+  margin:auto;
+
+  padding:100px 0;
+
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+  gap:30px;
+
+}
+
+.card{
+
+  background:#0d0d0d;
+
+  border:1px solid #300;
+
+  border-radius:20px;
+
+  padding:40px;
+
+  transition:0.3s;
+
+}
+
+.card:hover{
+
+  transform:translateY(-10px);
+
+  border-color:red;
+
+}
+
+.card h2{
+
+  color:red;
+
+  margin-bottom:15px;
+
+}
+
+.card p{
+
+  color:#999;
+
+  line-height:1.7;
+
+}
+
+.login-box{
+
+  width:500px;
+  max-width:90%;
+
+  margin:100px auto;
+
+  background:#0d0d0d;
+
+  border:1px solid #300;
+
+  padding:50px;
+
+  border-radius:25px;
+
+}
+
+.login-box h2{
+
+  text-align:center;
+
+  color:red;
+
+  margin-bottom:30px;
+
+}
+
+.login-box input{
+
+  width:100%;
+
+  padding:18px;
+
+  margin-bottom:20px;
+
+  background:#050505;
+
+  border:1px solid #300;
+
+  border-radius:14px;
+
+  color:white;
+
+}
+
+.login-box input:focus{
+
+  outline:none;
+
+  border-color:red;
+
+}
+
+.login-box button{
+
+  width:100%;
+
+  margin-top:10px;
+
+}
+
+.source-section{
+
+  padding:100px 20px;
+
+  text-align:center;
+
+}
+
+.source-section h2{
+
+  font-size:45px;
+
+  color:red;
+
+  margin-bottom:30px;
+
+}
+
+footer{
+
+  padding:30px;
+
+  text-align:center;
+
+  color:#666;
+
+  border-top:1px solid #300;
+
+}
